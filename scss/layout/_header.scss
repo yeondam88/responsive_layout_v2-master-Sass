@@ -1,0 +1,48 @@
+
+
+
+.name {
+    font-size: 2em;
+}
+
+.name,
+nav {
+    @extend %centered;
+    display: block;
+}
+
+.main-header {
+    background-color: #f5f7fa;
+}
+
+.navigation li {
+    width: 90%;
+    background-color: white;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 15px 5px;
+}
+
+.navigation li:hover {
+    background-color: rgba(0,0,0,0.5);
+    transition: 0.5s ease;
+}
+
+.profile {
+    @extend %centered;
+}
+
+.profile-pic {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 70%;
+}
+
+.profile p {
+    margin: auto;
+    margin-bottom: 15px;
+    padding-bottom: 30px;
+    width: 70%;
+}

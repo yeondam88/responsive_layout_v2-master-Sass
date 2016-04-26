@@ -1,0 +1,48 @@
+/*---- FOOTER RULE ---- */
+
+footer {
+    margin-top: 20px;
+    background-color: #f5f7fa;
+}
+
+.main-footer {
+    @extend %centered;
+}
+
+.contact {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.main-footer > p {
+    font-family: 'Abel', sans-serif;
+    font-size: 1em;
+    width: 80%;
+    margin: auto;
+}
+
+.second-footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.second-footer h3 {
+    padding-left: 40px;
+    display: inline;
+}
+
+.back-to-top {
+    float: right;
+    padding-right: 40px;
+}
+
+.footer-style {
+        display: flex;
+        justify-content: space-between;
+    }
+.footer-name {
+        width: 50%;
+    }
+.footer-navigation {
+        display:none;
+    }

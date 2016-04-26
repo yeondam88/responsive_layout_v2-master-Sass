@@ -1,0 +1,32 @@
+/*---- PORTFOLIO ---- */
+
+.container {
+    @extend %centered;
+}
+
+.portfolio-heading {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.portfolio-img img {
+    width: 90%;
+}
+
+.portfolio-img div > h2 {
+    font-size: 2em;
+    padding-top: 20px;
+}
+
+.portfolio-img div > p {
+    font-size: 1.25em;
+    font-family: 'Abel', sans-serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.portfolio-img div > h2,
+.portfolio-img div > p {
+    width: 70%;
+    margin: auto;
+}

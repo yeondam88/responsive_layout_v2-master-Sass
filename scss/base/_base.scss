@@ -1,0 +1,49 @@
+/* ---- GENERAL RULE ---- */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    color: #384047;
+}
+
+h1 {
+    color: black;
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+hr {
+    margin: auto;
+    width: 90%;
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: #4d4d4d;
+}
+
+a:visited {
+    color: #4d4d4d;
+}
+
+a:hover {
+    color:rgba(0,0,0,0.5);
+    transition: 0.5s ease;
+}
