@@ -1,8 +1,14 @@
-
+$backgroundColor: #f5f7fa;
 
 
 .name {
     font-size: 2em;
+    @include desktop {
+        text-align: left;
+        width: 50%;
+        padding-top: 20px;
+        padding-left: 80px;
+    }
 }
 
 .name,
@@ -12,7 +18,7 @@ nav {
 }
 
 .main-header {
-    background-color: #f5f7fa;
+    background-color: $backgroundColor;
 }
 
 .navigation li {
@@ -23,6 +29,15 @@ nav {
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 15px 5px;
+    @include tablet {
+        display: inline;
+        width: 50%;
+        background-color: $backgroundColor;
+        &:hover {
+            color: darkgrey;
+            background-color: $backgroundColor;
+        }
+    }
 }
 
 .navigation li:hover {
@@ -32,6 +47,17 @@ nav {
 
 .profile {
     @extend %centered;
+    @include tablet {
+        display: flex;
+        & div {
+            width: 50%;
+            padding: 10px;
+        }
+        & > div:nth-child(2) {
+            margin-top: 20px;
+            order: -1;
+        }
+    }
 }
 
 .profile-pic {

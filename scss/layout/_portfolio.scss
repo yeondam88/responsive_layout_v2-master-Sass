@@ -1,5 +1,7 @@
 /*---- PORTFOLIO ---- */
 
+$font-size: 1em;
+
 .container {
     @extend %centered;
 }
@@ -9,13 +11,46 @@
     padding-bottom: 30px;
 }
 
-.portfolio-img img {
-    width: 90%;
+.portfolio-img {
+    @include tablet {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    @include desktop {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    img {
+        width: 90%;
+    }
+    & > div {
+        @include tablet {
+            width: 40%;
+        }
+        @include desktop {
+            width: 33%;
+        }
+    }
+    div h2 {
+        @include desktop {
+            font-size: 1.2em;
+        }
+    }
+    div p {
+        @include desktop {
+            font-size: $font-size;
+        }
+    }
 }
 
 .portfolio-img div > h2 {
     font-size: 2em;
     padding-top: 20px;
+    @include tablet {
+        font-size: $font-size;
+    }
 }
 
 .portfolio-img div > p {
@@ -23,6 +58,9 @@
     font-family: 'Abel', sans-serif;
     padding-top: 20px;
     padding-bottom: 20px;
+    @include tablet {
+        font-size: 0.8em;
+    }
 }
 
 .portfolio-img div > h2,

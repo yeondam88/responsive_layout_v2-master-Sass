@@ -7,11 +7,20 @@ footer {
 
 .main-footer {
     @extend %centered;
+    p {
+        @include tablet {
+            font-size: 1em;
+            width: 50%;
+        }
+    }
 }
 
 .contact {
     padding-top: 30px;
     padding-bottom: 30px;
+    @include tablet {
+        font-size: 1em;
+    }
 }
 
 .main-footer > p {
@@ -29,6 +38,9 @@ footer {
 .second-footer h3 {
     padding-left: 40px;
     display: inline;
+    @include tablet {
+        font-size: 1em;
+    }
 }
 
 .back-to-top {
@@ -39,9 +51,16 @@ footer {
 .footer-style {
         display: flex;
         justify-content: space-between;
+        @include tablet {
+            display: flex;
+            justify-content: space-between;
+        }
     }
 .footer-name {
         width: 50%;
+        @include tablet {
+            width: 50%;
+        }
     }
 .footer-navigation {
         display:none;

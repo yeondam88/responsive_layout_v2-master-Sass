@@ -1,76 +1,10 @@
 
-
-
-
-
-
-
-
-
 /*---- MEDIA QUERY ---- */
 
 @media (min-width: 769px){
-    
-    /*---- Header Style ----*/
-    
-    .navigation li {
-        display: inline;
-        width: 50%;
-        background-color: #f5f7fa;
-    }
-    .navigation li:hover {
-        color: darkgrey;
-        background-color: #f5f7fa;
-    }
-    .profile {
-        display: flex;
-    }
-    .profile > div {
-        width: 50%;
-        padding: 10px;
-    }
-    .profile > div:nth-child(2) {
-        margin-top: 20px;
-        order: -1;
-    }
-    
-    /*---- Portfolio Style ----*/
-    
-    .portfolio-img {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-    .portfolio-img > div {
-        width: 50%;
-    }
-    .portfolio-img div h2 {
-        font-size: 1em;
-    }
-    .portfolio-img div p {
-        font-size: 0.8em;
-    }
-    
+
     /*---- Footer Style ----*/
-    
-    .contact {
-        font-size: 1em;
-    }
-    .main-footer p {
-        font-size: 1em;
-        width: 50%;
-    }
-    .second-footer h3 {
-        font-size: 1em;
-    }
-    .footer-style {
-        display: flex;
-        justify-content: space-between;
-    }
-    .footer-name {
-        width: 50%;
-    }
-    
+
     h3.back-to-top {
         display: none;
     }
@@ -87,7 +21,7 @@
     
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
     
     body {
         width: 100%;
@@ -100,12 +34,7 @@
         display: flex;
         justify-content: space-around;
     }
-    .name {
-        text-align: left;
-        width: 50%;
-        padding-top: 20px;
-        padding-left: 80px;
-    }
+    
     nav {
         width: 50%;
     }
@@ -137,23 +66,7 @@
         text-align: left;
     }
     
-    /*---- Portfolio Style ----*/
-    
-    .portfolio-img {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-    .portfolio-img > div {
-        width: 33%;
-    }
-    .portfolio-img div h2 {
-        font-size: 1.2em;
-    }
-    .portfolio-img div p {
-        font-size: 1em;
-    }
-    
+
     /*---- Footer Style ----*/
     
     .contact {
