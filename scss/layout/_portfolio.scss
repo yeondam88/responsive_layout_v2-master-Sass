@@ -13,14 +13,10 @@ $font-size: 1em;
 
 .portfolio-img {
     @include tablet {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
+        @include flexbox;
     }
     @include desktop {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
+        @include flexbox;
     }
     img {
         width: 90%;

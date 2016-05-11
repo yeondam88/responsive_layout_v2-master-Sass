@@ -21,6 +21,9 @@ footer {
     @include tablet {
         font-size: 1em;
     }
+    @include desktop {
+        font-size: 1.5em;
+    }
 }
 
 .main-footer > p {
@@ -28,6 +31,13 @@ footer {
     font-size: 1em;
     width: 80%;
     margin: auto;
+}
+
+.main-footer p {
+    @include desktop {
+        font-size: 1.25em;
+        width: 60%;
+    }
 }
 
 .second-footer {
@@ -41,11 +51,17 @@ footer {
     @include tablet {
         font-size: 1em;
     }
+    @include desktop {
+        font-size: 1em;
+    }
 }
 
 .back-to-top {
     float: right;
     padding-right: 40px;
+    @include desktop {
+        display: none;
+    }
 }
 
 .footer-style {
@@ -55,13 +71,51 @@ footer {
             display: flex;
             justify-content: space-between;
         }
+        @include desktop {
+            display: flex;
+            justify-content: space-between;
+        }
+        .footer-navigation li a{
+            &:hover {
+                color: firebrick;
+                transition: 1s ease;
+            }
+            &:active {
+                color: firebrick;
+                transition: 1s ease;
+            }
+        }
     }
 .footer-name {
         width: 50%;
         @include tablet {
             width: 50%;
         }
+        @include desktop {
+            width: 50%;
+        }
     }
+h3.back-to-top {
+    @include tablet {
+        display: none;
+    }
+}
+
 .footer-navigation {
-        display:none;
+    display:none;
+    @include tablet {
+        display: inline;
     }
+    & li {
+        @include tablet {
+            width: 50%;
+            display: inline;
+            padding-right: 30px;
+        }
+        @include desktop {
+            width: 50%;
+            display: inline;
+            padding-right: 50px;
+        }
+    }
+}

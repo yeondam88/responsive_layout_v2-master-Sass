@@ -1,43 +1,15 @@
 
 /*---- MEDIA QUERY ---- */
 
-@media (min-width: 769px){
-
-    /*---- Footer Style ----*/
-
-    h3.back-to-top {
-        display: none;
-    }
-    
-    .footer-navigation {
-        display: inline;
-    }
-    
-    .footer-navigation li {
-        width: 50%;
-        display: inline;
-        padding-right: 30px;
-    }
-    
-}
-
 @media (min-width: 1024px) {
     
+
+    /*---- Header Style ----*/
     body {
         width: 100%;
-        margin: 0 auto;
+        margin: 0 auto; 
     }
-    
-    /*---- Header Style ----*/
-    
-    .main-heading {
-        display: flex;
-        justify-content: space-around;
-    }
-    
-    nav {
-        width: 50%;
-    }
+
     .navigation {
         padding-right: 80px;
         padding-top: 40px;
@@ -65,36 +37,6 @@
         order: -1;
         text-align: left;
     }
-    
 
-    /*---- Footer Style ----*/
-    
-    .contact {
-        font-size: 1.5em;
-    }
-    .main-footer p {
-        font-size: 1.25em;
-        width: 60%;
-    }
-    .second-footer h3 {
-        font-size: 1em;
-    }
-    .footer-style {
-        display: flex;
-        justify-content: space-between;
-    }
-    .footer-name {
-        width: 50%;
-    }
-    
-    .back-to-top {
-        display: none;
-    }
-    
-    .footer-navigation li {
-        width: 50%;
-        display: inline;
-        padding-right: 50px;
-    }
 }
 

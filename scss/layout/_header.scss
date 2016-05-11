@@ -4,10 +4,7 @@ $backgroundColor: #f5f7fa;
 .name {
     font-size: 2em;
     @include desktop {
-        text-align: left;
         width: 50%;
-        padding-top: 20px;
-        padding-left: 80px;
     }
 }
 
@@ -17,8 +14,22 @@ nav {
     display: block;
 }
 
+nav {
+    @include desktop {
+        width: 50% !important;
+        align-self: center !important;
+    }
+}
+
 .main-header {
     background-color: $backgroundColor;
+}
+
+.main-heading {
+    @include desktop {
+        display: flex !important;
+        justify-content: space-around !important;
+    }
 }
 
 .navigation li {
@@ -38,11 +49,10 @@ nav {
             background-color: $backgroundColor;
         }
     }
-}
-
-.navigation li:hover {
-    background-color: rgba(0,0,0,0.5);
-    transition: 0.5s ease;
+    &:hover {
+        background-color: rgba(0,0,0,0.5);
+        transition: 0.5s ease;
+    }
 }
 
 .profile {

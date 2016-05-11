@@ -1,18 +1,18 @@
-/* ---- GENERAL RULE ---- */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0; }
 
 body {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   color: #384047; }
 
 h1 {
   color: black;
   margin: 0;
   padding-top: 15px;
-  padding-bottom: 15px; }
+  padding-bottom: 15px;
+  font-size: 1em; }
 
 ul {
   list-style-type: none; }
@@ -42,17 +42,24 @@ a:hover {
   font-size: 2em; }
   @media (min-width: 1024px) {
     .name {
-      text-align: left;
-      width: 50%;
-      padding-top: 20px;
-      padding-left: 80px; } }
+      width: 50%; } }
 
 .name,
 nav {
   display: block; }
 
+@media (min-width: 1024px) {
+  nav {
+    width: 50% !important;
+    align-self: center !important; } }
+
 .main-header {
   background-color: #f5f7fa; }
+
+@media (min-width: 1024px) {
+  .main-heading {
+    display: flex !important;
+    justify-content: space-around !important; } }
 
 .navigation li {
   width: 90%;
@@ -70,10 +77,9 @@ nav {
       .navigation li:hover {
         color: darkgrey;
         background-color: #f5f7fa; } }
-
-.navigation li:hover {
-  background-color: rgba(0, 0, 0, 0.5);
-  transition: 0.5s ease; }
+  .navigation li:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.5s ease; }
 
 @media (min-width: 768px) {
   .profile {
@@ -163,12 +169,20 @@ footer {
   @media (min-width: 768px) {
     .contact {
       font-size: 1em; } }
+  @media (min-width: 1024px) {
+    .contact {
+      font-size: 1.5em; } }
 
 .main-footer > p {
   font-family: 'Abel', sans-serif;
   font-size: 1em;
   width: 80%;
   margin: auto; }
+
+@media (min-width: 1024px) {
+  .main-footer p {
+    font-size: 1.25em;
+    width: 60%; } }
 
 .second-footer {
   padding-top: 30px;
@@ -180,10 +194,16 @@ footer {
   @media (min-width: 768px) {
     .second-footer h3 {
       font-size: 1em; } }
+  @media (min-width: 1024px) {
+    .second-footer h3 {
+      font-size: 1em; } }
 
 .back-to-top {
   float: right;
   padding-right: 40px; }
+  @media (min-width: 1024px) {
+    .back-to-top {
+      display: none; } }
 
 .footer-style {
   display: flex;
@@ -192,15 +212,45 @@ footer {
     .footer-style {
       display: flex;
       justify-content: space-between; } }
+  @media (min-width: 1024px) {
+    .footer-style {
+      display: flex;
+      justify-content: space-between; } }
+  .footer-style .footer-navigation li a:hover {
+    color: firebrick;
+    transition: 1s ease; }
+  .footer-style .footer-navigation li a:active {
+    color: firebrick;
+    transition: 1s ease; }
 
 .footer-name {
   width: 50%; }
   @media (min-width: 768px) {
     .footer-name {
       width: 50%; } }
+  @media (min-width: 1024px) {
+    .footer-name {
+      width: 50%; } }
+
+@media (min-width: 768px) {
+  h3.back-to-top {
+    display: none; } }
 
 .footer-navigation {
   display: none; }
+  @media (min-width: 768px) {
+    .footer-navigation {
+      display: inline; } }
+  @media (min-width: 768px) {
+    .footer-navigation li {
+      width: 50%;
+      display: inline;
+      padding-right: 30px; } }
+  @media (min-width: 1024px) {
+    .footer-navigation li {
+      width: 50%;
+      display: inline;
+      padding-right: 50px; } }
 
 .name,
 nav, .profile, .container, .main-footer {
