@@ -141,7 +141,7 @@ nav {
 
 .portfolio-img div > p {
   font-size: 1.25em;
-  font-family: 'Abel', sans-serif;
+  font-family: "Abel", sans-serif;
   padding-top: 20px;
   padding-bottom: 20px; }
   @media (min-width: 768px) {
@@ -174,7 +174,7 @@ footer {
       font-size: 1.5em; } }
 
 .main-footer > p {
-  font-family: 'Abel', sans-serif;
+  font-family: "Abel", sans-serif;
   font-size: 1em;
   width: 80%;
   margin: auto; }

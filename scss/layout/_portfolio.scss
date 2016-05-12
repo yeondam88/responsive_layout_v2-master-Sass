@@ -1,6 +1,7 @@
 /*---- PORTFOLIO ---- */
 
-$font-size: 1em;
+
+
 
 .container {
     @extend %centered;
@@ -31,12 +32,12 @@ $font-size: 1em;
     }
     div h2 {
         @include desktop {
-            font-size: 1.2em;
+            font-size: $Heading2FontSize;
         }
     }
     div p {
         @include desktop {
-            font-size: $font-size;
+            font-size: $paragraphFontSize;
         }
     }
 }
@@ -45,13 +46,13 @@ $font-size: 1em;
     font-size: 2em;
     padding-top: 20px;
     @include tablet {
-        font-size: $font-size;
+        font-size: $paragraphFontSize;
     }
 }
 
 .portfolio-img div > p {
     font-size: 1.25em;
-    font-family: 'Abel', sans-serif;
+    font-family: $paragraphFontFamily;
     padding-top: 20px;
     padding-bottom: 20px;
     @include tablet {

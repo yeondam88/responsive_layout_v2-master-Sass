@@ -1,8 +1,8 @@
 $backgroundColor: #f5f7fa;
-
+$nameFontSize: 2em;
 
 .name {
-    font-size: 2em;
+    font-size: $nameFontSize;
     @include desktop {
         width: 50%;
     }

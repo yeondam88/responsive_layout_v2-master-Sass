@@ -1,4 +1,6 @@
 /*---- FOOTER RULE ---- */
+$contactFontSize: 1.5em;
+
 
 footer {
     margin-top: 20px;
@@ -9,7 +11,7 @@ footer {
     @extend %centered;
     p {
         @include tablet {
-            font-size: 1em;
+            font-size: $paragraphFontSize;
             width: 50%;
         }
     }
@@ -19,16 +21,16 @@ footer {
     padding-top: 30px;
     padding-bottom: 30px;
     @include tablet {
-        font-size: 1em;
+        font-size: $paragraphFontSize;
     }
     @include desktop {
-        font-size: 1.5em;
+        font-size: $contactFontSize;
     }
 }
 
 .main-footer > p {
-    font-family: 'Abel', sans-serif;
-    font-size: 1em;
+    font-family: $paragraphFontFamily;
+    font-size: $paragraphFontSize;
     width: 80%;
     margin: auto;
 }

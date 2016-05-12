@@ -19,11 +19,11 @@
     .navigation li {
         display: inline;
         width: 50%;
-        background-color: #f5f7fa;
+        background-color: $navigationBackgroundColor;
     }
     .navigation li:hover {
-        color: darkgrey;
-        background-color: #f5f7fa;
+        color: $navigationFontColor;
+        background-color: $navigationBackgroundColor;
     }
     .profile {
         display: flex;
