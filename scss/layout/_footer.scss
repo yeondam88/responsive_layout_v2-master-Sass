@@ -1,10 +1,10 @@
 /*---- FOOTER RULE ---- */
-$contactFontSize: 1.5em;
+
 
 
 footer {
     margin-top: 20px;
-    background-color: #f5f7fa;
+    background-color: $footerBackgroundColor;
 }
 
 .main-footer {
@@ -37,7 +37,7 @@ footer {
 
 .main-footer p {
     @include desktop {
-        font-size: 1.25em;
+        font-size: $mainFooter_p_FontSize;
         width: 60%;
     }
 }
@@ -51,10 +51,10 @@ footer {
     padding-left: 40px;
     display: inline;
     @include tablet {
-        font-size: 1em;
+        font-size: $mainFooter_h3_FontSize;
     }
     @include desktop {
-        font-size: 1em;
+        font-size: $mainFooter_h3_FontSize;
     }
 }
 
@@ -79,11 +79,11 @@ footer {
         }
         .footer-navigation li a{
             &:hover {
-                color: firebrick;
+                color: $footerNavigationBackground;
                 transition: 1s ease;
             }
             &:active {
-                color: firebrick;
+                color: $footerNavigationBackground;
                 transition: 1s ease;
             }
         }

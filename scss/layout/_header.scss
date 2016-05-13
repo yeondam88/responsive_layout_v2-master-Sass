@@ -1,5 +1,4 @@
-$backgroundColor: #f5f7fa;
-$nameFontSize: 2em;
+
 
 .name {
     font-size: $nameFontSize;
@@ -34,7 +33,7 @@ nav {
 
 .navigation li {
     width: 90%;
-    background-color: white;
+    background-color: $navigationListColor;
     margin-right: auto;
     margin-left: auto;
     margin-top: 10px;
@@ -45,12 +44,12 @@ nav {
         width: 50%;
         background-color: $backgroundColor;
         &:hover {
-            color: darkgrey;
+            color: $navigationListHoverColor;
             background-color: $backgroundColor;
         }
     }
     &:hover {
-        background-color: rgba(0,0,0,0.5);
+        background-color: $navigationListHoverColor;
         transition: 0.5s ease;
     }
 }
