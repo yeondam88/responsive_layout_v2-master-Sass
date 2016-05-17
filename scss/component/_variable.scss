@@ -1,12 +1,29 @@
-// //Variable for Base
-// $bodyFont: 'Nunito', sans-serif;
-// $headerColor: black;
-// $headerFontsize: 1em;
-// $linkColor: #4d4d4d;
+//Variable for Base
+$bodyFont: 'Nunito', sans-serif;
+$bodyColor: #384047;
+$headerColor: black;
+$headerFontsize: 1em;
+$linkColor: #4d4d4d;
 
-// //Variable for Component
-// $navigationBackgroundColor: #f5f7fa;
-// $navigationFontColor: #4d4d4d;
-// $paragraphFontSize: 1em;
-// $Heading2FontSize: 1.2em;
-// $paragraphFontFamily: 'Abel', sans-serif;
+//Variable for header
+$backgroundColor: #f5f7fa;
+$nameFontSize: 2em;
+$navigationBackgroundColor: #f5f7fa;
+$navigationFontColor: #4d4d4d;
+$navigationListColor: #fff;
+$navigationListHoverColor: darkgrey;
+$paragraphFontSize: 1em;
+$Heading2FontSize: 1.2em;
+$paragraphFontFamily: 'Abel', sans-serif;
+
+//Variable for Portfolio
+$portfolio_h2_FontSize: 2em;
+$portfolio_p_FontSize: 1.25em;
+$portfolio_p_FontSize_for_media: 0.8em;
+$contactFontSize: 1.5em;
+
+//Variable for Footer
+$footerBackgroundColor: #f5f7fa;
+$mainFooter_p_FontSize: 1.25em;
+$mainFooter_h3_FontSize: 1em;
+$footerNavigationBackground: firebrick;
